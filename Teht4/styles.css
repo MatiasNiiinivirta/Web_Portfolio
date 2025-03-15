@@ -1,0 +1,33 @@
+.hover-link {
+  text-decoration: none; /* Ei alaviivaa oletuksena */
+  color: black; /* Linkin väriksi musta */
+}
+
+/* Hover-efekti linkille, jolla on luokka .hover-link */
+.hover-link:hover {
+  color: red; /* Muuttaa värin punaiseksi hover-tilassa */
+  text-decoration: underline; /* Lisää alaviivan hover-tilassa */
+}
+
+li {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+tr {
+  font-family: "Courier New", Courier, monospace;
+}
+
+label {
+  font-family: "Courier New", Courier, monospace;
+}
+
+input {
+  border: 1px solid #ccc; /* Kevyt harmaa reunus */
+  border-radius: 30px; /* Pyöristää kulmia */
+  padding: 10px; /* Lisää sisäistä tilaa */
+  width: 300px; /* Asettaa leveyden */
+}

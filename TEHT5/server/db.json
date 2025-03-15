@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "nimi": "Musta pekka",
+      "puhelin": "3489338944",
+      "id": 1
+    },
+    {
+      "nimi": "Aku ankka",
+      "puhelin": "4950940945",
+      "id": 2
+    },
+    {
+      "nimi": "Iines Ankka",
+      "puhelin": "453455355",
+      "id": 3
+    }
+  ]
+}

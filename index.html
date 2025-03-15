@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="portfolio1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul class="parent">
+        <li class="HomePage">
+          <a href="#" class="nappi active" onclick="openTab(event, 'kotisivu')">
+            <span>Portfolio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nappi" onclick="openTab(event, 'teht1')">
+            <span>Tehtävä 1</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nappi" onclick="openTab(event, 'teht2')">
+            <span>Tehtävä 2</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nappi" onclick="openTab(event, 'teht3')">
+            <span>Tehtävä 3</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nappi" onclick="openTab(event, 'teht4')">
+            <span>Tehtävä 4</span>
+          </a>
+        </li>
+        <li>
+          <a class="nappi" href="#" onclick="openTab(event, 'teht5')">
+            <span>Tehtävä 5</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="alasivu" id="kotisivu">
+        <div class="text-container">
+          <div class="container mt-5">
+          <h2>Portfolio</h2>
+          <p>Tervetuloa portfoliooni!</p>
+        </div>
+        </div>
+      <div class="container">
+        <div class="card feedback-card mb-4 border-0">
+          <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Palaute kurssista</h5>
+          </div>
+          <div class="card-body">
+            <div class="scrollable-feedback bg-light p-3 rounded">
+              Tiesin hieman HTML ja CSS ennen kurssia aikaisemman koulutuksen pohjalta, kurssi auttoi hyvin palauttamaan mieleen aikaisemmin opittuja asioita. Muutama hyödyllinen asia tuli opittua lisää, kuten bootsrap. Bootsrap on auttanut minua erityisen paljon tässä tehtävässä. Minusta se on paljon helppokäyttöisempi kuin CSS ja tekee nopeasti ja helposti paljon parempaa jälkeä visuaalisesti kuin css. Olen myös tutustunut itsenäisesti muutamaan bootsrapin kaltaiseen asiaan, kuten prism.js, jonka avulla olen tehnyt koodista värikästä. Tuo oli kurssin kohokohta. Kurssiin meni suurinpiirtein arvioitu oppimäärä eli 133, koska luennot olivat pitkiä. Oppimispäiväkirjan kirjoittamiseen meni aikaa ja myös tähän portfoliotehtävään. Arvioisin, että jokaisena viikkona käytin noin 11 tuntia kurssin suorittamiseen, joskus enemmän ja joskus vähemmän. Tulevaisuuden suhteen minulla itsellä on kirjaprojekti, johon olen tehnyt nettisivunpuolikkaan jo valmiiksi, aion ainakin jatkaa sen tekemistä.
+            </div>
+          </div>
+        </div>
+      
+        <div class="card feedback-card mb-4 border-0">
+          <div class="card-header bg-danger text-white">
+            <h5 class="mb-0">Parannettavaa</h5>
+          </div>
+          <div class="card-body">
+            <div class="scrollable-feedback bg-light p-3 rounded">
+              Itse olisin kuitenkin toteuttanut kurssin toisella tapaa. Koen, että kurssi oli liian teoriapainotteinen ja olisin vähentänyt teorian opiskelua rankalla kädellä ja lisännyt tehtäviä aiheista joita oltiin käyty tunneilla. Olisin painottanut itseopiskelua, koska mielestäni käytäntö on tuhansia kertoja tehokkaampaa ja mielekkäämpää kuin se, että aiheista jaaritellaan kolme tuntia putkeen luennoilla, jonka jälkeen niistä pitää kirjoittaa oppimispäiväkirjaan. Olisin poistanut myös koko oppimispäiväkirja-konseptin kurssilta kokonaan, koska minusta tuntuu, ettäi se tehosta oppimista olenkaan. En ole oppinut yhtään mitään lisää, kun olen kirjoittanut sitä, enemmänkin olen kokenut sen turhana ajankuluna. Olisin itse myös vähentänyt luentojen pituutta, kolme tuntia on aivan liikaa. Niistä vapautuneen ajan olisin mielummin käyttänyt tehtävien tekoon, tehtävien jotka samanaikaisesti opettaisivat uutta, muta kertaisivat jo aiemmin opittuja asioita. En myöskään saanut apua, kun kysyin opettajalta asioista sähköpostilla. 
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="alasivu" id="teht1">
+
+          <!-- Laatikko 2 -->
+          <div class="col-md-12">
+            <div class="container mt-5">
+              <h2>Web-kehitys kurssilla tehty ensimmäinen JavaScript Tehtävä</h2>
+              <pre class="bg-dark text-light p-3 rounded" style="white-space: pre-wrap">1. Koodi toimii siten, että käyttäjä syöttää sanan, joka  otetaan ja luodaan sen käänteinen versio. Tämä tehdään käymällä läpi sanan kaikki kirjaimet takaperin, niin että ensimmäinen kirjain tulee viimeiseksi ja viimeinen kirjain tulee ensimmäiseksi.</pre>
+              <pre class="bg-dark text-light p-3 rounded" style="white-space: pre-wrap">2. Kun sana on käännetty, verrataan alkuperäistä sanaa ja käännettyä sanaa. Jos ne ovat täsmälleen samat, se tarkoittaa,että sana on palindromi, eli se on sama, vaikka luettaisiin etuperin tai takaperin.</pre>
+              <pre class="bg-dark text-light p-3 rounded" style="white-space: pre-wrap">3. Jos sanat ovat samat, näytetään käyttäjälle viesti, joka kertoo, että sana on palindromi. Jos taas sanat eivät ole samat, näytetään viesti, joka kertoo, että sana ei ole palindromi.</pre>
+              <pre class="bg-dark text-light p-3 rounded" style="white-space: pre-wrap">Alunperin sovellus toimi vain komentokehoitepohjaisesti, mutta se on myös implementoitu nettisivulle, kuten alhaalta näkee.</pre>
+            </div>
+          </div>
+        <div class="container">
+            <!-- Laatikko 1 -->
+            <div class="col-md-12 mb-4">
+              <div class="laatikko">
+                <h2>Palindromi testeri</h2>
+                <label for="wordInput">Syötä sana:</label>
+                <input type="text" id="wordInput" class="form-control mb-3" />
+                <button onclick="palindrome()" class="btn btn-primary mt-2">
+                  Tarkista
+                </button>
+                <p id="result" class="mt-3"></p>
+                <script src="JsTehtava1/Tehtava1.js" defer></script>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-5">
+            <h2>Html-ystävällinen javascript koodi.</h2>
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            >Tämä koodi koostuu vain yhdestä funktiosta, jossa käyttäjän syöttämä sana haetaan HTML-sivulta ja tallennetaan muuttujaan. Sen jälkeen sana käydään läpi takaperin ja muodostetaan uusi merkkijono, joka sisältää sanan kirjaimet käänteisessä järjestyksessä. Lopuksi alkuperäistä ja käännettyä sanaa verrataan keskenään. Jos ne ovat täsmälleen samat, käyttäjälle näytetään vihreällä tekstillä viesti, että sana on palindromi. Muussa tapauksessa näytetään punainen viesti, joka kertoo, ettei sana ole palindromi.</pre
+            >
+          </div>
+
+          <div class="container mt-0">
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            ><code class="language-javascript">function palindrome() {
+              var sana = document.getElementById("wordInput").value;
+            
+              var sanaUpsideDown = "";
+            
+              for (let i = sana.length - 1; i >= 0; i--) {
+                sanaUpsideDown += sana[i];
+              }
+            
+              var resultElement = document.getElementById("result");
+              if (sana === sanaUpsideDown) {
+                resultElement.textContent = "Sana on palindromi.";
+                resultElement.style.color = "green";
+              } else {
+                resultElement.textContent = "Sana ei ole palindromi.";
+                resultElement.style.color = "red";
+              }
+            }
+            </code></pre
+            >
+          </div>
+
+          <div class="container mt-5">
+            <h2>Alkuperäinen Komentokehoitepohjainen koodi</h2>
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            >Tässä komentokehoitepohjaisessa koodissa eroavaisuutena on readline-sync-kirjaston käyttö, joka mahdollistaa käyttäjän syötteen lukemisen suoraan komentoriviltä ilman asynkronisia tapahtumia. Toisin kuin selainpohjaisessa versiossa, jossa syöte haetaan HTML-elementistä document.getElementById -metodilla, tässä syöte otetaan suoraan käyttäjältä komennolla input.question(). Lisäksi tulos tulostetaan suoraan komentokehoitteeseen console.log-komennolla, eikä näytetä HTML-sivulla värillisenä tekstinä.</pre
+            >
+          </div>
+
+          <div class="container mt-0">
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            ><code class="language-javascript">function palindrome() {
+              var input = require("readline-sync");
+              var sana = input.question("Syötä jokin sana: ");
+            
+              var sanaUpsideDown = "";
+            
+              for (let i = sana.length - 1; i >= 0; i--) {
+                sanaUpsideDown += sana[i];
+              }
+            
+              if (sana == sanaUpsideDown) {
+                console.log("Sana on palindromi.");
+              } else {
+                console.log("Sana Ei ole palindromi.");
+              }
+            }
+            
+            palindrome();
+            </code></pre
+            >
+          </div>
+
+        </div>
+
+        <div class="container mt-5">
+          <h2>Loppusanat</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tämän tehtävän kautta sain ehkä ensimmäisen kosketuksen javascriptiin. Ja opin erityisesti funktioiden muodostamisesta. Aluksi minulta jäi oppimatta, että miten tällainen toiminto implementoidaan HTML-nettisivulle, mutta opitelin sen jälkeenpäin.</pre
+          >
+        </div>
+
+      </section>
+      <section class="alasivu" id="teht2">
+        <div id="puhelinluettelo-taulukko"></div>
+        <div class="container mt-5">
+          <h2>Komentokehoitepohjainen puhelinluettelo tehtävä</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >
+Tässä tehvässä on kyse komentokehoitepohjaisesta javascript ohjelmasta, jossa pyritään mallintamaan puhelinluetteloa. Puhelinluettelo toimii henkilö luokan kautta, jossa henkilö-oliolla on nimi ja puhelinnumero. Ohjelmassa on neljä eri toimintoa, joiden välillä navikoidaan switch-case pohjaisen käyttöliittymän avulla. Jokaisen toiminnon suorittamisen jälkeen palataan jälleen alkupisteeseen, jossa voi valita toisen toiminnon. Ensimmäinen toiminto mahdollistaa koko puhelinluettelon tulostamisen komentokehtoitteeseen. Toinen toiminto mahdollistaa uuden henkilön lisäämisen puhelinluetteloon. Kolmas toiminto mahdollistaa puhelinnumeron hakemisen nimen perusteella ja, jos henkilöä ei löydy siitä ilmoitetaan. ja neljäs mahdollistaa sovelluksen lopettamisen.</pre
+          >
+        </div>
+
+        <div class="container mt-5">
+          <h2>Koko koodi</h2>
+          <pre class="bg-dark text-light p-3 rounded">
+        <code class="language-javascript">class Henkilo {
+          constructor(nimi, puhelinnumero) {
+            this.nimi = nimi;
+            this.puhelinnumero = puhelinnumero;
+          }
+        }
+        
+        let puhelinluettelo = [
+          new Henkilo("Abdi Mohammad", "0401234567"),
+          new Henkilo("Top G", "0509876543"),
+          new Henkilo("Jones Angel", "05048394389"),
+          new Henkilo("Triple Ice", "0505748578"),
+        ];
+        
+        const readlineSync = require("readline-sync");
+        
+        function LisaaUusiHenkilo() {
+          let nimi = readlineSync.question("Syötä nimi: ");
+          let puhelinnumero = readlineSync.question("Syötä puhelinnumero: ");
+        
+          let uusihenkilo = new Henkilo(nimi, puhelinnumero);
+        
+          puhelinluettelo.push(uusihenkilo);
+        
+          console.log("Uusi henkilö lisätty puhelinluetteloon!");
+        
+          // Näytetään päivitetty puhelinluettelo
+          console.log(puhelinluettelo);
+        }
+        
+        function HaeHenkiloa(puhelinluettelo, nimi) {
+          let henkilo = puhelinluettelo.find(
+            (h) => h.nimi.toLowerCase() === nimi.toLowerCase()
+          );
+          if (henkilo) {
+            return henkilo.puhelinnumero; // Palautetaan puhelinnumero
+          } else {
+            return "Henkilöä ei löytynyt puhelinluettelosta."; // Jos henkilö ei löydy
+          }
+        }
+        function NaytaKaikki() {
+          console.log(puhelinluettelo);
+        }
+        
+        console.log("Tervetuloa puhelinluetteloon!");
+        console.log("Jos haluat Nähdä puheliluettelon, Paina yksi.");
+        console.log("Jos haluat lisätä henkilön puheliluettelon, Paina kaksi.");
+        console.log("Hae puhelinnumeroa nimen kautta, Paina kolme.");
+        console.log("Quit, Paina q.");
+        
+        do {
+          // Kysytään käyttäjältä valinta joka kierroksella
+          Valinta = readlineSync.question(
+            "Valitse toiminto (1: Näytä kaikki, 2: Lisää henkilö, 3: Hae henkilö, q: Lopeta): "
+          );
+        
+          switch (Valinta) {
+            case "1":
+              NaytaKaikki();
+              break;
+            case "2":
+              LisaaUusiHenkilo();
+              break;
+            case "3":
+              let nimi = readlineSync.question("Syötä haettavan henkilön nimi: ");
+              let puhelinnumero = HaeHenkiloa(puhelinluettelo, nimi); // Kutsutaan HaeHenkiloa-funktiota
+              console.log(`Henkilön puhelinnumero on: ${puhelinnumero}`); // Näytetään puhelinnumero
+              break;
+            case "q":
+              console.log("Ohjelma lopetetaan.");
+              break;
+            default:
+              console.log("Väärä näppäin! Yritä uudelleen.");
+              break;
+          }
+        } while (Valinta !== "q");</code>
+    </pre>
+        </div>
+        <div class="container mt-5">
+          <h2>Henkilö luokka</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tässä on henkilö luokka, jonka ilmentymiin koko koodi pohjaa ja hieman huumorilla tehty valmispuhelinluettelo, johon voi halutessaan lisätä lisää uusia henkilöitä puhelinnumeroineen.</pre> 
+        </div>
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >
+<code class="language-javascript" >class Henkilo {
+  constructor(nimi, puhelinnumero) {
+    this.nimi = nimi;
+    this.puhelinnumero = puhelinnumero;
+  }
+}
+         let puhelinluettelo = [
+  new Henkilo("Abdi Mohammad", "0401234567"),
+  new Henkilo("Top G", "0509876543"),
+  new Henkilo("Jones Angel", "05048394389"),
+  new Henkilo("Triple Ice", "0505748578"),
+</pre>
+];</code>
+        </div>
+
+        <div class="container mt-5">
+          <h2>Koko puhelinluettelon näkeminen</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tässä on funktio, joka näyttää käyttäjälle koko puhelinluettelon. Se toimii yksinkertaisella console.log()-metodilla. Funktiota kutsutaan ohjelman käyttöliittymässä painamalla yksi.</pre> 
+        </div>
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          ><code class="language-javascript">function NaytaKaikki() {
+            console.log(puhelinluettelo);
+          }</code>
+        </pre> 
+        </div>
+        <div class="container mt-0">
+          <img src="Kuvat\Valinta1_2.png" alt="Kuvaus" class="img-fluid rounded mb-3">
+        </div>
+
+        <div class="container mt-5">
+          <h2>Henkilön lisääminen </h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tämä funktio LisaaUusiHenkilo() lisää uuden henkilön puhelinluetteloon. Se pyytää käyttäjältä nimen ja puhelinnumeron readlineSync.question() -metodilla, joka tallentaa syötetyt tiedot nimi- ja puhelinnumero-muuttujiin. Sen jälkeen luodaan Henkilo-olio syötetyillä tiedoilla ja lisätään se puhelinluettelo-taulukkoon push()-metodilla. Tämä mahdollistaa henkilön tallentamisen puhelinluetteloon. Kun henkilö on lisätty, konsoliin tulostetaan viesti: "Uusi henkilö lisätty puhelinluetteloon!". Lopuksi funktio tulostaa koko päivitetyn puhelinluettelo-taulukon konsoliin, jotta käyttäjä voi nähdä kaikki tallennetut henkilöt.</pre> 
+        </div>
+
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          > <code class="language-javascript"> function LisaaUusiHenkilo() {
+            let nimi = readlineSync.question("Syötä nimi: ");
+            let puhelinnumero = readlineSync.question("Syötä puhelinnumero: ");
+          
+            let uusihenkilo = new Henkilo(nimi, puhelinnumero);
+          
+            puhelinluettelo.push(uusihenkilo);
+          
+            console.log("Uusi henkilö lisätty puhelinluetteloon!");
+          
+            // Näytetään päivitetty puhelinluettelo
+            console.log(puhelinluettelo);
+          }</code>
+        </pre> 
+        </div>
+
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          ><code class="language-javascript">function NaytaKaikki() {
+            console.log(puhelinluettelo);
+          }</code>
+        </pre> 
+        </div>
+        <div class="container mt-0">
+          <img src="Kuvat\Valinta2.png" alt="Kuvaus" class="img-fluid rounded mb-3">
+        </div>
+
+        <div class="container mt-5">
+          <h2>Henkilön Hakeminen </h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"> Tämän funktion avulla voi hakea puhelinluettelossa listassa olevaa puhelinnumeroa nimen perusteella. Funktion parametrina on taulukko josta haetaan ja henkilön nimi.
+            Funktio palauttaa puhelinnumeron.</pre>        
+        </div>
+
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"><code class="language-javascript">  function HaeHenkiloa(puhelinluettelo, nimi) {
+              let henkilo = puhelinluettelo.find(
+                (h) => h.nimi.toLowerCase() === nimi.toLowerCase()
+              );
+              if (henkilo) {
+                return henkilo.puhelinnumero; // Palautetaan puhelinnumero
+              } else {
+                return "Henkilöä ei löytynyt puhelinluettelosta."; // Jos henkilö ei löydy
+              }
+            }</code> 
+          </pre> 
+        </div>
+
+        <div class="container mt-0">
+          <img src="Kuvat\Valinta3.png" alt="Kuvaus" class="img-fluid rounded mb-3">
+        </div>
+
+        <div class="container mt-5">
+          <h2>Loppusanat </h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tein tämän tehtävän, koska se oli pakollinen kurssin suorittamiseen. Opin luokkien ja metodien käytön JavaScriptissä sekä syntaksin, joka on samankaltainen kuin C#:ssa. Oivalsin myös, miten JavaScriptissä käytetään find()-metodia taulukon käsittelyyn, mikä oli uutta. Jotkut asiat, kuten tietojen validointi ja virheiden käsittely, jäivät vielä oppimatta. Mielestäni onnistuin tehtävässä hyvin. Koodi toimii ja on selkeä. Jos tekisin jotain toisin, lisäisin vielä tarkempaa virheenkäsittelyä ja parantaisin käyttäjäkokemusta lisäämällä esimerkiksi validointia syötteille.</pre> 
+        </div>
+      </section>
+      <section class="alasivu" id="teht3">
+        <div class="container mt-5">
+          <h2>Tehtävä kolme</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tämä tehtävä käsittelee luokkia, niiden aliluokkia ja periytymistä. Tehtävässä on tehty urheilijaluokka, joka perii Henkilö-luokan ominaisuudet, kuten sukunimen, kutsumanimen, sukunimen ja syntymävuoden. Urheilijalla on myös omia ominaisuuksia, mitä kyseinen luokka ilmentää, kuten omapaino, laji, saavutukset ja linkki. Luokkien ominaisuudet merkitään this-'jotain'. this.jotain on tarpeellinen, koska se viittaa olion ominaisuuksiin, joita voidaan käyttää luokan sisällä ja sen ulkopuolella. Ilman this, muuttujat pysyisivät vain konstruktorin sisällä eivätkä tallentuisi olion ominaisuuksiksi.</pre>
+        </div>
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          ><code class="language-javascript">const readlineSync = require("readline-sync");
+
+            class Henkilo {
+              constructor(etunimi, sukunimi, kutsumanimi, syntymävuosi) {
+                this.etunimi = etunimi;
+                this.sukunimi = sukunimi;
+                this.kutsumanimi = kutsumanimi;
+                this.syntymävuosi = new Date(syntymävuosi);
+              }
+            }
+            
+            class Urheilija extends Henkilo {
+              constructor(
+                etunimi,
+                sukunimi,
+                kutsumanimi,
+                syntymävuosi,
+                omapaino,
+                laji,
+                saavutukset,
+                linkki
+              ) {
+                super(etunimi, sukunimi, kutsumanimi, syntymävuosi);
+                this.omapaino = omapaino;
+                this.laji = laji;
+                this.saavutukset = saavutukset;
+                this.linkki = linkki;
+              }
+            }</code>
+          </pre>
+        </div>
+            <div class="container mt-5">
+              <h2>Getterit ja setteri </h2>
+              <pre
+                class="bg-dark text-light p-3 rounded"
+                style="white-space: pre-wrap"
+              >Gettereitä ja settereitä käytetään, koska tarjoavat kontrolloidun tavan hakea ja asettaa olion ominaisuuksia. getter mahdollistaa ominaisuuden hakemisen erityisellä logiikalla, kuten syntymävuoden palauttamisen, ja setter mahdollistaa ominaisuuden asettamisen tiettyjen ehtojen mukaisesti. Jos niitä ei käytetä, ominaisuuksiin voidaan silti suoraan lukea ja kirjoittaa, mutta se voi aiheuttaa ongelmia tietyissä tilanteissa. Gettereihein ja settereihin ominaisuudet merkitään this_.jotain, this.jotain sijasta, koska näin voidaan välttää rekursiivinen looppi, joak voisi kaataa ohjelman lopulta.</pre> 
+            </div>
+
+            <div class="container mt-0">
+              <pre
+                class="bg-dark text-light p-3 rounded"
+                style="white-space: pre-wrap">
+              <code class="language-javascript">
+                get omapaino() {
+                  return this._omapaino;
+                }
+              
+                set omapaino(omapaino) {
+                  this._omapaino = omapaino + " kg";
+                }
+              
+                get laji() {
+                  return this._laji;
+                }
+                set laji(laji) {
+                  this._laji = laji;
+                }
+              
+                get saavutukset() {
+                  return this._saavutukset;
+                }
+                set saavutukset(saavutukset) {
+                  this._saavutukset = saavutukset;
+                }
+              
+                get linkki() {
+                  return this._linkki; // Getter palauttaa _linkki-attribuutin
+                }
+              
+                set linkki(linkki) {
+                  if (!/^https?:\/\//.test(linkki)) {
+                    linkki = "https://" + linkki; // Lisää "https://", jos puuttuu
+                  }
+                  this._linkki = linkki;
+                }
+              </code>
+            </pre>
+            </div>
+            <div class="container mt-5">
+              <h2>Luokan ilmentymä alustetaan</h2>
+              <pre
+                class="bg-dark text-light p-3 rounded"
+                style="white-space: pre-wrap"
+              >Tässä alustetaan urheilijaluokan ilmentymiä koodissa.</pre> 
+            </div>
+
+            <div class="container mt-0">
+              <pre
+                class="bg-dark text-light p-3 rounded"
+                style="white-space: pre-wrap">
+              <code class="language-javascript">
+                const urheilija = new Urheilija();
+urheilija.etunimi = "Perttu";
+urheilija.sukunimi = "Hyttinen";
+urheilija.kutsumanimi = "Pertsa";
+urheilija.syntymävuosi = "1981-09-01";
+urheilija.omapaino = 127;
+urheilija.laji = "Kaljakellunta";
+urheilija.saavutukset = "Kolmen kertainen kultamitalisti";
+urheilija.linkki = "fi.wikipedia.org/wiki/Kaljakellunta";
+
+const urheilija2 = new Urheilija();
+urheilija2.etunimi = "Timo";
+urheilija2.sukunimi = "Kaukonen";
+urheilija2.kutsumanimi = "'Sauna Timo'";
+urheilija2.syntymävuosi = "1965-09-07";
+urheilija2.omapaino = 111;
+urheilija2.laji = "Saunominen";
+urheilija2.saavutukset = "Voittanut maailman mestaruuden viidesti";
+urheilija2.linkki =
+  "https://www.mtvuutiset.fi/artikkeli/missa-he-ovat-nyt-timo-meinasi-palaa-hengilta-saunassa-rujo-keho-muistuttaa-yha-kauhun-hetkista/6083514";
+
+const urheilija3 = new Urheilija();
+urheilija3.etunimi = "Kim";
+urheilija3.sukunimi = "Jong un";
+urheilija3.kutsumanimi = "";
+urheilija3.syntymävuosi = "1984-01-08";
+urheilija3.omapaino = 140;
+urheilija3.laji = "Golf";
+urheilija3.saavutukset = "11 hole in one";
+urheilija3.linkki =
+  "https://www.espn.com/blog/playbook/fandom/post/_/id/308/kim-jong-un-a-boss-at-sports-too";
+              </code>
+            </pre>
+            </div>
+
+            <div class="container mt-5">
+              <h2>Luokan ilmentymä kutsutaan</h2>
+              <pre
+                class="bg-dark text-light p-3 rounded"
+                style="white-space: pre-wrap"
+              >Tässä kutsutaan luokan ilmentymiä komentokehtoitteeseen kahdella eri tavalla. Kahdessa ensimmäisessä ilmentymän tietoja kutsutaan tavallisella console.log() metodilla ja jälkimmäisellä taulukolla. Lopussa vielä näkyy kuva siitä, miltä ilmentymien tulostus näyttää komentokehoitteessa. Viimeisenä on taulukko.</pre> 
+            </div>
+
+            <div class="container mt-0">
+              <pre
+                class="bg-dark text-light p-3 rounded"
+                style="white-space: pre-wrap">
+              <code class="language-javascript">
+                console.log(
+                  `Urheilija: ${urheilija.etunimi} ${urheilija.kutsumanimi} ${urheilija.sukunimi}`
+                );
+                console.log(`Syntymävuosi:  ${urheilija.syntymävuosi}`);
+                console.log(`Laji: ${urheilija.laji}`);
+                console.log(`Omapaino: ${urheilija.omapaino}`);
+                console.log(`Saavutukset: ${urheilija.saavutukset}`);
+                console.log(`Linkki: ${urheilija.linkki}`);
+                
+                console.log();
+                
+                console.log(
+                  `Urheilija: ${urheilija2.etunimi} ${urheilija2.kutsumanimi} ${urheilija2.sukunimi}`
+                );
+                console.log(`Syntymävuosi: ${urheilija2.syntymävuosi}`);
+                console.log(`Laji: ${urheilija2.laji}`);
+                console.log(`Omapaino: ${urheilija2.omapaino}`);
+                console.log(`Saavutukset: ${urheilija2.saavutukset}`);
+                console.log(`Linkki: ${urheilija2.linkki}`);
+                
+                console.log();
+                
+                console.table([
+                  {
+                    Etunimi: urheilija3.etunimi,
+                    Kutsumanimi: urheilija3.kutsumanimi,
+                    Sukunimi: urheilija3.sukunimi,
+                    Syntymävuosi: urheilija3.syntymävuosi,
+                    Laji: urheilija3.laji,
+                    Omapaino: urheilija3.omapaino,
+                    Saavutukset: urheilija3.saavutukset,
+                    Linkki: urheilija3.linkki,
+                  },
+                ]);
+              </code>
+            </pre>
+            </div>
+
+            <div class="container mt-0">
+              <img src="Kuvat\Urheilija_Ilmentyma.png" alt="Kuvaus" class="img-fluid rounded mb-3">
+            </div>
+            <div class="container mt-5">
+              <h2>Koko koodi</h2>
+              <pre
+                class="bg-dark text-light p-3 rounded"
+                style="white-space: pre-wrap">
+              <code class="language-javascript">
+                const readlineSync = require("readline-sync");
+
+                class Henkilo {
+                  constructor(etunimi, sukunimi, kutsumanimi, syntymävuosi) {
+                    this.etunimi = etunimi;
+                    this.sukunimi = sukunimi;
+                    this.kutsumanimi = kutsumanimi;
+                    this.syntymävuosi = new Date(syntymävuosi);
+                  }
+                }
+                
+                class Urheilija extends Henkilo {
+                  constructor(
+                    etunimi,
+                    sukunimi,
+                    kutsumanimi,
+                    syntymävuosi,
+                    omapaino,
+                    laji,
+                    saavutukset,
+                    linkki
+                  ) {
+                    super(etunimi, sukunimi, kutsumanimi, syntymävuosi);
+                    this.omapaino = omapaino;
+                    this.laji = laji;
+                    this.saavutukset = saavutukset;
+                    this.linkki = linkki;
+                  }
+                
+                  get omapaino() {
+                    return this._omapaino;
+                  }
+                
+                  set omapaino(omapaino) {
+                    this._omapaino = omapaino + " kg";
+                  }
+                
+                  get laji() {
+                    return this._laji;
+                  }
+                  set laji(laji) {
+                    this._laji = laji;
+                  }
+                
+                  get saavutukset() {
+                    return this._saavutukset;
+                  }
+                  set saavutukset(saavutukset) {
+                    this._saavutukset = saavutukset;
+                  }
+                
+                  get linkki() {
+                    return this._linkki; // Getter palauttaa _linkki-attribuutin
+                  }
+                
+                  set linkki(linkki) {
+                    if (!/^https?:\/\//.test(linkki)) {
+                      linkki = "https://" + linkki; // Lisää "https://", jos puuttuu
+                    }
+                    this._linkki = linkki;
+                  }
+                }
+                
+                // Luodaan Urheilija-olio
+                const urheilija = new Urheilija();
+                urheilija.etunimi = "Perttu";
+                urheilija.sukunimi = "Hyttinen";
+                urheilija.kutsumanimi = "Pertsa";
+                urheilija.syntymävuosi = "1981-09-01";
+                urheilija.omapaino = 127;
+                urheilija.laji = "Kaljakellunta";
+                urheilija.saavutukset = "Kolmen kertainen kultamitalisti";
+                urheilija.linkki = "fi.wikipedia.org/wiki/Kaljakellunta";
+                
+                const urheilija2 = new Urheilija();
+                urheilija2.etunimi = "Timo";
+                urheilija2.sukunimi = "Kaukonen";
+                urheilija2.kutsumanimi = "'Sauna Timo'";
+                urheilija2.syntymävuosi = "1965-09-07";
+                urheilija2.omapaino = 111;
+                urheilija2.laji = "Saunominen";
+                urheilija2.saavutukset = "Voittanut maailman mestaruuden viidesti";
+                urheilija2.linkki =
+                  "https://www.mtvuutiset.fi/artikkeli/missa-he-ovat-nyt-timo-meinasi-palaa-hengilta-saunassa-rujo-keho-muistuttaa-yha-kauhun-hetkista/6083514";
+                
+                const urheilija3 = new Urheilija();
+                urheilija3.etunimi = "Kim";
+                urheilija3.sukunimi = "Jong un";
+                urheilija3.kutsumanimi = "";
+                urheilija3.syntymävuosi = "1984-01-08";
+                urheilija3.omapaino = 140;
+                urheilija3.laji = "Golf";
+                urheilija3.saavutukset = "11 hole in one";
+                urheilija3.linkki =
+                  "https://www.espn.com/blog/playbook/fandom/post/_/id/308/kim-jong-un-a-boss-at-sports-too";
+                
+                // Testataan luodun olion tietoja
+                console.log(
+                  `Urheilija: ${urheilija.etunimi} ${urheilija.kutsumanimi} ${urheilija.sukunimi}`
+                );
+                console.log(`Syntymävuosi:  ${urheilija.syntymävuosi}`);
+                console.log(`Laji: ${urheilija.laji}`);
+                console.log(`Omapaino: ${urheilija.omapaino}`);
+                console.log(`Saavutukset: ${urheilija.saavutukset}`);
+                console.log(`Linkki: ${urheilija.linkki}`);
+                
+                console.log();
+                
+                console.log(
+                  `Urheilija: ${urheilija2.etunimi} ${urheilija2.kutsumanimi} ${urheilija2.sukunimi}`
+                );
+                console.log(`Syntymävuosi: ${urheilija2.syntymävuosi}`);
+                console.log(`Laji: ${urheilija2.laji}`);
+                console.log(`Omapaino: ${urheilija2.omapaino}`);
+                console.log(`Saavutukset: ${urheilija2.saavutukset}`);
+                console.log(`Linkki: ${urheilija2.linkki}`);
+                
+                console.log();
+                
+                console.table([
+                  {
+                    Etunimi: urheilija3.etunimi,
+                    Kutsumanimi: urheilija3.kutsumanimi,
+                    Sukunimi: urheilija3.sukunimi,
+                    Syntymävuosi: urheilija3.syntymävuosi,
+                    Laji: urheilija3.laji,
+                    Omapaino: urheilija3.omapaino,
+                    Saavutukset: urheilija3.saavutukset,
+                    Linkki: urheilija3.linkki,
+                  },
+                ]);
+              </code>
+            </pre>
+            </div>
+
+            <div class="container mt-5">
+              <h2>Loppusanat</h2>
+              <pre
+                class="bg-dark text-light p-3 rounded"
+                style="white-space: pre-wrap"
+              >Tässä koodissa opin, kuinka luokkaperintä toimii JavaScriptissä ja miten getterit sekä setterit mahdollistavat tietojen muokkaamisen ja validoinnin. Ymmärsin myös, kuinka voi käyttää super-metodia periytetyssä luokassa ja miten console.table auttaa tiedon esittämisessä selkeästi. Jäi vielä oppimatta, miten voisi paremmin hyödyntää kapselointia ja varmistaa, ettei olion ominaisuuksia voi asettaa epätoivotulla tavalla. Lisäksi voisi kehittää tapoja käsitellä virhetilanteita esimerkiksi tyhjien tai virheellisten arvojen kohdalla.</pre> 
+            </div>            
+    </div>
+      </section>
+      <section class="alasivu" id="teht4">
+
+        <div class="container mt-5">
+          <h2>Tehtävä 4</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tässä tehtävässä loin yksinkertaisen HTML-sivun, joka toimii pääsivuna puhelinluettelolle. Käytin Bootstrapia sivun ulkoasunparantamiseen ja responsiivisuuden varmistamiseen. Tein sivulle otsikon, joka kertoo, että kyseessä on puhelinluettelo, sekä muutaman linkin, joilla pääsee tarkastelemaan koko puhelinluetteloa tai etsimään puhelinnumeroa. Alla oleva ikkuna toimii kuin mikä tahansa nettisivu, paina edellinen-näppäintä, jos haluat liikkua takaisin ikkunan sisällä.</pre> 
+        </div>
+        <div class="container mt-5">
+          <img src="Kuvat\Edellinen.png" alt="Kuvaus" class="img-fluid rounded mb-3">
+        </div> 
+        <div class="container mt-5">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          ><iframe src="Teht4/index.html" width="100%" height="500px"></iframe></pre> 
+        </div> 
+
+          <div class="container mt-5">
+            <h2>Etusivu</h2>
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            >Sivustolla on yksinkertainen etusivu, jossa on kaksi linkkiä toisiin html.pohjaisiin sivustoihin: "Koko puhelinluettelo" ja "Hae puhelinnumero". Sivusto käyttää Bootstrapia tyylittelyyn ja varmistaa responsiivisuuden. Yläosassa on otsikko "Puhelinluettelo", joka näkyy keskitetysti ja punaisella värillä. Alla on navigointilista, jossa käyttäjä voi siirtyä joko koko puhelinluetteloon (taulukko.html) tai hakea yksittäisen puhelinnumeron (haku.html). Bootstrapin JavaScript-kirjasto ladataan, mutta sitä ei käytetä aktiivisesti tässä sivussa.</pre> 
+          </div>
+
+          <div class="container mt-0">
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            ><code class="language-html">&lt;!DOCTYPE html&gt;
+              &lt;html lang=&quot;fi&quot;&gt;
+                &lt;head&gt;
+                  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+                  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+                  &lt;title&gt;Pääsivu - Puhelinluettelo&lt;/title&gt;
+                  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;
+                  &lt;link
+                    href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;
+                    rel=&quot;stylesheet&quot;
+                    integrity=&quot;sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH&quot;
+                    crossorigin=&quot;anonymous&quot;
+                  /&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;div class=&quot;p-3 mb-2 text-danger text-center text-align&quot;&gt;
+                    &lt;h1&gt;Puhelinluettelo&lt;/h1&gt;
+                  &lt;/div&gt;
+                  &lt;script
+                    src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js&quot;
+                    integrity=&quot;sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz&quot;
+                    crossorigin=&quot;anonymous&quot;
+                  &gt;&lt;/script&gt;
+                  &lt;div class=&quot;p-3 mb-2 bg-light text-center text-align&quot;&gt;
+                    &lt;ul class=&quot;list-unstyled&quot;&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;taulukko.html&quot; class=&quot;hover-link&quot;&gt;Koko puhelinluettelo&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;haku.html&quot; class=&quot;hover-link&quot;&gt;Hae puhelinnumero&lt;/a&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;</code></pre> 
+          </div>
+
+          <div class="container mt-0">
+            <h2>Taulukko</h2>
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            >Taulukko on yksinkertainen puhelinluettelo, joka hakee henkilöiden nimet ja puhelinnumerot JSON-muodossa palvelimelta ja näyttää ne taulukossa. Se käyttää jQuery-kirjastoa tietojen hakemiseen ja Bootstrapia tyylittelyyn. Kun sivu latautuu, jQuery suorittaa HTTP GET -pyynnön osoitteeseen http://a41d.k.time4vps.cloud:3001/henkilot ja lisää saadut tiedot taulukkoon. Sivuston rakenteessa yhdistyvät, html, javascript ja tyyliä on myös hieman paranneltu css:ällä bootsrapin lisäksi.</pre> 
+          </div>
+
+          <div class="container mt-0">
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            ><code class="language-html">&lt;!DOCTYPE html&gt;
+              &lt;html lang="fi"&gt;
+                &lt;head&gt;
+                  &lt;meta charset="UTF-8" /&gt;
+                  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+                  &lt;title&gt;Puhelinluettelo&lt;/title&gt;
+                  &lt;link rel="stylesheet" href="styles.css" /&gt;
+                  &lt;script src="https://code.jquery.com/jquery-3.5.1.js"&gt;&lt;/script&gt;
+                  &lt;link
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+                    rel="stylesheet"
+                    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+                    crossorigin="anonymous"
+                  /&gt;
+                  &lt;style&gt;
+                    table,
+                    th,
+                    td {
+                      border: 1px solid black;
+                      border-collapse: collapse;
+                      padding: 8px;
+                      margin: auto;
+                      text-align: left;
+                    }
+                    th {
+                      background-color: #f2f2f2;
+                    }
+                  &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1 class="text-danger text-center"&gt;Puhelinluettelo&lt;/h1&gt;
+                  &lt;table id="henkilotTaulukko"&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th&gt;Nimi&lt;/th&gt;
+                        &lt;th&gt;Puhelinnumero&lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;&lt;/tbody&gt;
+                  &lt;/table&gt;
+        
+                  &lt;script&gt;
+                    $(document).ready(function () {
+                      $.getJSON(
+                        "http://a41d.k.time4vps.cloud:3001/henkilot",
+                        function (data) {
+                          // Käydään läpi henkilöt ja lisätään taulukkoon
+                          data.forEach(function (henkilo) {
+                            $("#henkilotTaulukko tbody").append(
+                              "&lt;tr&gt;&lt;td&gt;" +
+                                henkilo.nimi +
+                                "&lt;/td&gt;&lt;td&gt;" +
+                                henkilo.puhelin +
+                                "&lt;/td&gt;&lt;/tr&gt;"
+                            );
+                          });
+                        }
+                      );
+                    });
+                  &lt;/script&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;   
+              </code>
+            </pre>
+          </div>
+
+          <div class="container mt-0">
+            <h2>Haku-toiminto</h2>
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            >Tämä HTML-sivu hakee henkilön puhelinnumeron annetun nimen perusteella. Käyttäjä syöttää nimen tekstikenttään ja painaa "Hae puhelinnumero" -painiketta. Sivusto käyttää jQueryä ja AJAX-pyyntöä hakeakseen JSON-tiedot palvelimelta. Jos nimi löytyy, puhelinnumero täytetään toiseen tekstikenttään. Jos nimeä ei löydy, näytetään ilmoitus. Bootstrapin avulla sivu saa tyylikkään ulkoasun.</pre> 
+          </div>
+
+          <div class="container mt-0">
+            <pre
+              class="bg-dark text-light p-3 rounded"
+              style="white-space: pre-wrap"
+            ><code class="language-html">&lt;!DOCTYPE html&gt;
+              &lt;html lang=&quot;fi&quot;&gt;
+                &lt;head&gt;
+                  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+                  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+                  &lt;title&gt;Hae Puhelinnumero&lt;/title&gt;
+                  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;
+                  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+                  &lt;link
+                    href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;
+                    rel=&quot;stylesheet&quot;
+                    integrity=&quot;sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH&quot;
+                    crossorigin=&quot;anonymous&quot;
+                  /&gt;
+                  &lt;script&gt;
+                    $(document).ready(function () {
+                      $(&quot;[name='submit']&quot;).click(function () {
+                        var nimi = $(&quot;#nimi&quot;).val();
+                        $.getJSON(
+                          &quot;http://a41d.k.time4vps.cloud:3001/henkilot&quot;,
+                          function (data) {
+                            var puhelin = data.find(function (henkilo) {
+                              return henkilo.nimi.toLowerCase() === nimi.toLowerCase();
+                            });
+                            if (puhelin) {
+                              $(&quot;#puhelin&quot;).val(puhelin.puhelin);
+                            } else {
+                              alert(&quot;Henkilöä ei löytynyt!&quot;);
+                            }
+                          }
+                        );
+                      });
+                    });
+                  &lt;/script&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1 class=&quot;text-center text-danger&quot;&gt;Hae Puhelinnumero&lt;/h1&gt;
+                  &lt;form id=&quot;form&quot; name=&quot;form&quot;&gt;
+                    &lt;div class=&quot;text-center&quot;&gt;
+                      &lt;label for=&quot;nimi&quot;&gt;Syötä nimi:&lt;/label&gt;
+                      &lt;input name=&quot;nimi&quot; id=&quot;nimi&quot; type=&quot;text&quot; maxlength=&quot;35&quot; size=&quot;35&quot; /&gt;
+                      &lt;input
+                        name=&quot;puhelin&quot;
+                        id=&quot;puhelin&quot;
+                        type=&quot;text&quot;
+                        readonly
+                        maxlength=&quot;35&quot;
+                        size=&quot;35&quot;
+                      /&gt;
+                      &lt;button name=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-danger btn-sm&quot;&gt;
+                        Hae puhelinnumero
+                      &lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/form&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+        
+      <div class="container mt-0">
+        <h2>Loppusanat</h2>
+        <pre
+          class="bg-dark text-light p-3 rounded"
+          style="white-space: pre-wrap"
+        >Tehtävän aikana opin Bootstrapin käyttöä paremmin ja sen hyödyntämistä ulkoasun parantamiseen ilman, että tarvitsi kirjoittaa paljoa omaa CSS-koodia. Mielestäni kuitenkin sivustosta jäi hieman raakileen näköinen, koska siinä ei ole hirveästi elementtejä. Toisaalta on vaikea keksiä siihen lisää elementtejä tai tehdä sen ulkoasua paremmaksi, koska tehtävänanto oli tehdä yksinkertainen nettisivu. Vaikea keksiä lisää, jos ei ole tarvetta.</pre> 
+      </div>
+      </section>
+      
+      <section class="alasivu" id="teht5">
+
+        <div class="container mt-5">
+          <h2>Tehtävä 5</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tämä tehtävä tehtiin jo puoliksi oppitunnilla. Se on responsiivinen taulukko, johon voi lisätä ja poistaa tietoja. Tietoja voi myös muokata. Itse piti oikeastaa tehdä vain poisto muokkaustoiminto.</pre> 
+        </div>
+
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          ><iframe src="TEHT5/client/lomake.html" width="100%" height="500px"></iframe></pre> 
+        </div>
+
+        <div class="container mt-5">
+          <h2>Serverin käynnistys</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Serveri käynnistetään komennolla json-server --watch db.json Terminaalissa tai suorittamalla StartServer.js. Se on server kansiossa oleva koodi, joka on tehty ja lisätty mukaan sen vuoksi, että serverin käynnistys olisi helpompaa. Sen jälkeen näkymän pitäisi näyttää tältä.</pre> 
+        </div>
+
+        <div class="container mt-0">
+          <img src="Kuvat\Esimerkki.png" alt="Kuvaus" class="img-fluid rounded mb-3"> 
+        </div>
+
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tässä esitellään StartServer.js toiminta. Se on koodi, joka suorittaa Node.js:n exec-funktion avulla komentoriviltä komennon json-server --watch db.json. Se käynnistää json-server-palvelimen, joka lukee db.json-tiedoston ja toimii paikallisena REST API:na.</pre> 
+        </div>
+
+          <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          ><code class="language-javascript">// Suorita komento
+            exec("json-server --watch db.json", (error, stdout, stderr) => {
+              if (error) {
+                console.error(`Virhe: ${error.message}`);
+                return;
+              }
+              if (stderr) {
+                console.error(`Virhetilanne: ${stderr}`);
+                return;
+              }
+              console.log(`Palvelimen ulostulo: ${stdout}`);
+            });
+          </code></pre> 
+        </div>
+
+        <div class="container mt-5">
+          <h2>Ulkoasu</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Tämä sivu sisältää lomakkeen, jossa käyttäjä voi syöttää nimen ja puhelinnumeron ja lähettää ne palvelimelle osoitteeseen http://localhost:3000/items. Bootstrap 5 tuo sivulle tyylikkään ulkoasun. Sivulla on myös taulukko, johon dataa päivitetään. JavaScript-tiedosto script2.js hoitaa sivuston toiminnallisuuden.</pre> 
+        </div>
+
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          ><code class="language-html">&lt;!DOCTYPE html&gt;
+            &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot; /&gt;
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+                &lt;link
+                  href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot;
+                  rel=&quot;stylesheet&quot;
+                  integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot;
+                  crossorigin=&quot;anonymous&quot;
+                /&gt;
+                &lt;title&gt;Document&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;form action=&quot;http://localhost:3000/items&quot; id=&quot;puhelintieto_lomake&quot;&gt;
+                  &lt;div class=&quot;mb-3 mt-3&quot;&gt;
+                    &lt;label for=&quot;nimi&quot; class=&quot;form-label&quot;&gt;
+                      Nimi:
+                      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;nimi&quot; name=&quot;nimi&quot; /&gt;
+                    &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;mb-3 mt-3&quot;&gt;
+                    &lt;label for=&quot;puhelin&quot; class=&quot;form-label&quot;&gt;
+                      Puhelin:
+                      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;puhelin&quot; name=&quot;puhelin&quot; /&gt;
+                    &lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;input
+                    type=&quot;submit&quot;
+                    class=&quot;btn btn-primary&quot;
+                    value=&quot;Luo uusi puhelintieto&quot;
+                  /&gt;
+                &lt;/form&gt;
+                &lt;table class=&quot;table table-striped&quot;&gt;&lt;/table&gt;
+            
+                &lt;script
+                  src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js&quot;
+                  integrity=&quot;sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM&quot;
+                  crossorigin=&quot;anonymous&quot;
+                &gt;&lt;/script&gt;
+                &lt;script src=&quot;./script2.js&quot;&gt;&lt;/script&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+        </pre> 
+        </div>
+
+        <div class="container mt-5">
+          <h2>Toiminnallisuus</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Käytännössä sovellus hakee tiedot JSON-palvelimelta käyttäen JavaScriptin `fetch`-funktiota. Kun sivu ladataan, `loadPage`-funktio suoritetaan heti, ja se hakee tiedot `http://localhost:3000/items` -osoitteesta. Palvelin palauttaa JSON-muotoisen listan käyttäjätiedoista, joka muunnetaan JavaScript-olioksi ja välitetään `displayUser`-funktiolle. Tämä funktio rakentaa taulukon ja kutsuu `displayRow`-funktiota, joka lisää jokaisen käyttäjän tiedot taulukkoon, myös "poista" ja "muokkaa" -napit. removeRow poistaa rivin taulukosta ja lähettää DELETE-pyynnön palvelimelle rivin poistamiseksi. EditRow muuttaa taulukon rivin solut muokattaviksi kentiksi ja vaihtaa "Muokkaa"-napin "Tallenna"-napiksi. SaveRow päivittää muokatun rivin tiedot palvelimelle PUT-pyynnöllä ja päivittää taulukon vastaavat solut. PostFormDataAsJson lähettää lomakkeen tiedot palvelimelle JSON-muodossa. HandleFormSubmit estää lomakkeen oletustoiminnan, lähettää lomakkeen tiedot palvelimelle ja lisää uuden rivin taulukkoon. AddRow lisää uuden rivin taulukkoon vastaavasti kuin displayRow, mutta lisää uuden käyttäjän.</pre> 
+        </div>
+
+        <div class="container mt-0">
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          ><code class="language-javascript">&lt;script&gt;
+            (loadPage = () => {
+              fetch(&quot;http://localhost:3000/items&quot;)
+                .then((res) => res.json())
+                .then((data) => {
+                  displayUser(data);
+                });
+            })();
+          
+            const userDisplay = document.querySelector(&quot;.table&quot;); // Haetaan taulukkoelementti
+          
+            displayUser = (data) => {
+              userDisplay.innerHTML += `
+                  &lt;thead&gt;
+                  &lt;tr&gt;
+                      &lt;th&gt;Id&lt;/th&gt;
+                      &lt;th&gt;Nimi&lt;/th&gt;
+                      &lt;th&gt;Puhelin&lt;/th&gt;
+                      &lt;th&gt;Poista&lt;/th&gt;
+                      &lt;th&gt;Muokkaa&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  `;
+              displayRow(data);
+            };
+            // Luo taulukon otsikot ja kutsuu displayRow-metodia tietorivien näyttämiseksi
+          
+            displayRow = (data) => {
+              data.forEach((user) => {
+                userDisplay.innerHTML += `
+                    &lt;tbody&gt;
+                    &lt;tr data-id=&quot;${user.id}&quot;&gt;
+                        &lt;td&gt;${user.id}&lt;/td&gt;
+                        &lt;td&gt;${user.nimi}&lt;/td&gt;
+                        &lt;td&gt;${user.puhelin}&lt;/td&gt;
+                        &lt;td&gt;&lt;input type=&quot;button&quot; onClick=&quot;removeRow(${user.id})&quot; value=&quot;x&quot;/&gt;&lt;/td&gt;
+                        &lt;td&gt;&lt;input type=&quot;button&quot; onClick=&quot;editRow(${user.id})&quot; value=&quot;Muokkaa&quot;/&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                    `;
+              });
+            };
+            // Lisää jokaiselle käyttäjälle rivin taulukkoon ja tarjoaa mahdollisuuden poistaa tai muokata tietoa
+          
+            removeRow = async (id) => {
+              console.log(id);
+              let polku = &quot;http://localhost:3000/items/&quot; + id;
+          
+              try {
+                const response = await fetch(polku, { method: &quot;DELETE&quot; });
+                if (!response.ok) {
+                  throw new Error(&quot;Poisto epäonnistui&quot;);
+                }
+                console.log(&quot;Poisto onnistui&quot;);
+                const row = document.querySelector(`tr[data-id=&quot;${id}&quot;]`);
+                if (row) {
+                  row.remove();
+                }
+              } catch (error) {
+                console.error(error);
+              }
+            };
+            // Poistaa käyttäjän palvelimelta ja poistaa sen rivin taulukosta
+          
+            editRow = (id) => {
+              let row = document.querySelector(`tr[data-id='${id}']`);
+              let cells = row.getElementsByTagName(&quot;td&quot;);
+          
+              let nimi = cells[1].innerText;
+              let puhelin = cells[2].innerText;
+          
+              cells[1].innerHTML = `&lt;input type=&quot;text&quot; value=&quot;${nimi}&quot; id=&quot;edit-nimi-${id}&quot;&gt;`;
+              cells[2].innerHTML = `&lt;input type=&quot;text&quot; value=&quot;${puhelin}&quot; id=&quot;edit-puhelin-${id}&quot;&gt;`;
+          
+              cells[4].innerHTML = `&lt;input type=&quot;button&quot; onClick=&quot;saveRow(${id})&quot; value=&quot;Tallenna&quot;/&gt;`;
+            };
+            // Mahdollistaa käyttäjätietojen muokkaamisen muuttamalla kentät syöttökentiksi
+          
+            saveRow = async (id) => {
+              let editedNimi = document.getElementById(`edit-nimi-${id}`).value;
+              let editedPuhelin = document.getElementById(`edit-puhelin-${id}`).value;
+          
+              let polku = &quot;http://localhost:3000/items/&quot; + id;
+              let data = { nimi: editedNimi, puhelin: editedPuhelin };
+          
+              await fetch(polku, {
+                method: &quot;PUT&quot;,
+                headers: { &quot;Content-Type&quot;: &quot;application/json&quot; },
+                body: JSON.stringify(data),
+              });
+          
+              let row = document.querySelector(`tr[data-id='${id}']`);
+              let cells = row.getElementsByTagName(&quot;td&quot;);
+          
+              cells[1].innerText = editedNimi;
+              cells[2].innerText = editedPuhelin;
+          
+              cells[4].innerHTML = `&lt;input type=&quot;button&quot; onClick=&quot;editRow(${id})&quot; value=&quot;Muokkaa&quot;/&gt;`;
+            };
+            // Tallentaa muokatut tiedot palvelimelle ja päivittää ne taulukossa
+          
+            async function postFormDataAsJson({ url, formData }) {
+              const plainFormData = Object.fromEntries(formData.entries());
+              const formDataJsonString = JSON.stringify(plainFormData);
+              const fetchOptions = {
+                method: &quot;POST&quot;,
+                headers: { &quot;Content-Type&quot;: &quot;application/json&quot;, Accept: &quot;application/json&quot; },
+                body: formDataJsonString,
+              };
+              const response = await fetch(url, fetchOptions);
+              if (!response.ok) {
+                const errorMessage = await response.text();
+                throw new Error(errorMessage);
+              }
+              return response.json();
+            }
+            // Lähettää lomaketiedot JSON-muodossa palvelimelle POST-pyynnöllä
+          
+            async function handleFormSubmit(event) {
+              event.preventDefault();
+              const form = event.currentTarget;
+              const url = form.action;
+              try {
+                const formData = new FormData(form);
+                const responseData = await postFormDataAsJson({ url, formData });
+                addRow(responseData);
+                form.reset();
+                console.log({ responseData });
+              } catch (error) {
+                console.error(error);
+              }
+            }
+            // Käsittelee lomakkeen lähettämisen, lähettää tiedot palvelimelle ja lisää uuden rivin taulukkoon
+          
+            function addRow(user) {
+              const userDisplay = document.querySelector(&quot;.table tbody&quot;);
+              const newRow = document.createElement(&quot;tr&quot;);
+              newRow.setAttribute(&quot;data-id&quot;, user.id);
+          
+              newRow.innerHTML = `
+                  &lt;td&gt;${user.id}&lt;/td&gt;
+                  &lt;td&gt;${user.nimi}&lt;/td&gt;
+                  &lt;td&gt;${user.puhelin}&lt;/td&gt;
+                  &lt;td&gt;&lt;input type=&quot;button&quot; onClick=&quot;removeRow(${user.id})&quot; value=&quot;x&quot;/&gt;&lt;/td&gt;
+                  &lt;td&gt;&lt;input type=&quot;button&quot; onClick=&quot;editRow(${user.id})&quot; value=&quot;Muokkaa&quot;/&gt;&lt;/td&gt;
+                `;
+          
+              userDisplay.appendChild(newRow);
+            }
+            // Lisää uuden käyttäjän tiedot taulukkoon, kun lomake on lähetetty
+          
+            const exampleForm = document.getElementById(&quot;puhelintieto_lomake&quot;);
+            exampleForm.addEventListener(&quot;submit&quot;, handleFormSubmit);
+          &lt;/script&gt;
+          </code>
+        </pre> 
+        </div>
+
+        <div class="container mt-5">
+          <h2>Loppusanat</h2>
+          <pre
+            class="bg-dark text-light p-3 rounded"
+            style="white-space: pre-wrap"
+          >Opin tässä hieman serverien toiminnasta ja olen myös oppinut, kuinka manipuloida DOM:ia JavaScriptillä, luoda interaktiivisia taulukoita ja yhdistää käyttöliittymä taustapalvelimeen API-pyyntöjen avulla. Olen myös tutustunut lomakkeen käsittelyyn ja asynkronisiin operaatioihin fetch-metodilla. Vielä opittavaa voisi olla syvempää ymmärrystä virheiden käsittelystä, tietoturvasta (esim. SQL-injektioiden ehkäisy, autentikointi) ja mahdollisesti paremmista sovellusrakenteista (esim. MVC-arkkitehtuuri, frontend-backend-erottelu).</pre> 
+        </div>
+        
+       
+      </section>
+    </main>
+    <script>
+      function openTab(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("alasivu");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("nappi");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "grid";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <!-- Bootstrapin JavaScript (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Keskittää tehtävälinkit */
+  position: relative; /* Mahdollistaa absoluuttisen sijoittelun */
+  background-color: #212121;
+  padding: 10px;
+}
+
+.parent {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  justify-content: center; /* Keskittää tehtävät */
+}
+
+.parent li {
+  display: inline-block;
+}
+
+.nappi {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* HomePage sijoitus */
+.HomePage {
+  position: absolute;
+  left: 100px; /* Siirtää vasemmalle */
+  top: 10px; /* Siirtää ylös */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.alasivu {
+  display: none;
+}
+
+#kotisivu {
+  grid-template-columns: 1fr; /* Kaksi saraketta */
+  align-items: center; /* Kohdistaa pystysuunnassa keskelle */
+  justify-content: start; /* Tekstit hieman vasemmalle */
+  display: grid; /* Avaa ensimmäinen välilehti oletuksena */
+  background-color: #212121;
+  min-height: 100vh; /* Vähintään koko näkymäkorkeus */
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
+}
+
+.text-container h2 {
+  text-align: center; /* Varmistaa, että teksti pysyy vasemmalla */
+  font-size: 3rem; /* Muuttaa otsikon kokoa */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.text-container p {
+  text-align: center; /* Varmistaa, että teksti pysyy vasemmalla */
+  font-size: 2rem; /* Muuttaa otsikon kokoa */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Kohdistaa kuvan keskelle */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Pyöristetyt reunat, jos haluat */
+}
+
+.nappi.active {
+  color: white; /* Korosta aktiivinen välilehti */
+  text-shadow: 0px 0px 25px white;
+}
+
+#teht1 .laatikko h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#teht1 label {
+  color: white;
+}
+.laatikko {
+  display: grid;
+  place-items: center; /* Keskittää sisällön kontainerissa */
+  background-color: #333; /* Tummempi tausta kontainerille */
+  padding: 20px;
+  border: 3px solid #00ced1; /* Lisää oranssi raja */
+  border-radius: 10px; /* Pyöristetyt kulmat */
+  width: fit-content; /* Kontainerin leveys mukautuu sisällön mukaan */
+  margin: auto; /* Keskittää kontainerin */
+}
+
+#teht1 label,
+#teht1 input,
+#teht1 button {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#teht1 input {
+  border: 2px solid #333;
+  background-color: #444;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  width: 250px;
+  text-align: center;
+}
+
+#teht1 input:focus {
+  border-color: #00ced1; /* Korostus väri, kun kenttä on aktiivinen */
+}
+
+#teht1 button {
+  background-color: #00ced1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Pehmeä siirtymä */
+}
+
+#teht1 button:hover {
+  background-color: #8a2be2; /* Tummempi oranssi hover-tilassa */
+}
+
+#teht1 p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
